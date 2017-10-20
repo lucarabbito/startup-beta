@@ -1,0 +1,22 @@
+@import "bulma";
+
+.navbar {
+  background: linear-gradient(-90deg, #267871, #136a8a);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-end {
+  margin: auto 1rem;
+}
+
+.menu {
+  background: linear-gradient( #136a8a,#267871);
+  padding: 4em 3em;
+}
+
+.menu {
+  position: fixed;
+}
+

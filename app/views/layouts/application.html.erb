@@ -5,10 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<%= yield %>
+
+<div class="columns" style="width: 100%">
+  <div class="column is-3 column-menu">
+	<%= render "layouts/header" %>
+	<%= render "layouts/dashboardMenu" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
+  <div class="column auto">
+	<%= yield %>
+  </div>
+</div>
 
 </body>
 </html>
